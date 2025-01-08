@@ -11,7 +11,7 @@ import History from "./pages/History/history";
 
 const router = createBrowserRouter([
   {
-    path: "/M18-Dz/",
+    path: "/M18-Dz",
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
