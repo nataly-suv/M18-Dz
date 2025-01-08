@@ -5,7 +5,7 @@ import logo_img from "../../images/logo-header.png";
 const Header = () => {
   return (
     <header className={style.header}>
-      <Link to="/" className={style.logo}>
+      <Link to="/M18-Dz" className={style.logo}>
         <img className={style.logo__img} src={logo_img} alt="logo" />
         <p className={style.logo__text}>Jelly Belly</p>
       </Link>
