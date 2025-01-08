@@ -1,0 +1,22 @@
+.recipes__conteiner {
+    margin: 0 10px;
+}
+
+.recipes {
+    padding: 10px 5px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+.title {
+    margin: 50px 0;
+    font-size: 48px;
+    text-align: center;
+    font-family: Lobster;
+    color: #e83a4b;
+}

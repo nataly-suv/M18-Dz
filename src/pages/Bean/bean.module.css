@@ -1,0 +1,45 @@
+.bean {
+    min-height: 90vh;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.img {
+    width: 35%;
+}
+
+.box {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: "Roboto", serif;
+}
+
+.title {
+    margin: 50px 0;
+    font-size: 48px;
+    text-align: center;
+    font-family: Lobster;
+    color: #e83a4b;
+}
+
+.description {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    color: #e83a4b;
+    margin-bottom: 20px;
+}
+
+.ingredients, .gluten {
+    font-family: "Roboto", serif;
+    color: #000;
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: 14px;
+}

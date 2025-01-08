@@ -1,0 +1,69 @@
+/* fact */
+
+.fact {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    padding: 40px 20px;
+    margin: 0 10px;
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 7px #a0a0a0;
+}
+
+.title {
+    font-family: "Roboto", serif;
+    font-size: 30px;
+    color: #e83a4b;
+    margin-bottom: 50px;
+    margin-top: 0;
+    position: relative;
+}
+
+.title::after {
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 2px;
+    background: #e83a4b;
+}
+
+.description {
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 840px) {
+    .fact {
+        width: 23%;
+    }
+}
+
+@media (max-width: 768px) {
+    .fact {
+        width: 90%;
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .fact {
+        width: 90%;
+        padding: 20px 5px;
+    }
+
+    .title {
+        font-size: 24px;
+        padding: 40px 10px;
+        padding: 0;
+    }
+}
