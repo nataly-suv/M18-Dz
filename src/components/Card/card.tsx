@@ -9,7 +9,7 @@ type Props = {
 
 const Card: FC<Props> = ({ data }) => {
   return (
-    <Link to={`/bean/${data.beanId}`}
+    <Link to={`/M18-Dz/bean/${data.beanId}`}
       className={style.card}
       style={{ backgroundColor: data.backgroundColor }}
     >

@@ -19,7 +19,7 @@ const HeaderMobile = () => {
     <header className={style.headerMobile}>
       {/* лого и бургер меню */}
       <div className={style.menu}>
-        <Link to="/" className={style.logo}>
+        <Link to="/M18-Dz" className={style.logo}>
           <img className={style.logo__img} src={logo_img} alt="logo" />
           <p className={style.logo__text}>Jelly Belly</p>
         </Link>
@@ -40,23 +40,23 @@ const HeaderMobile = () => {
           alt="close"
         />
         <nav className={style.navMobile}>
-          <Link to="/beans" onClick={handleClick} className={style.nav__text}>
+          <Link to="/M18-Dz/beans" onClick={handleClick} className={style.nav__text}>
             Beans
           </Link>
-          <Link to="/facts" onClick={handleClick} className={style.nav__text}>
+          <Link to="/M18-Dz/facts" onClick={handleClick} className={style.nav__text}>
             Facts
           </Link>
-          <Link to="/recipes" onClick={handleClick} className={style.nav__text}>
+          <Link to="/M18-Dz/recipes" onClick={handleClick} className={style.nav__text}>
             Recipes
           </Link>
           <Link
-            to="/combinations"
+            to="/M18-Dz/combinations"
             onClick={handleClick}
             className={style.nav__text}
           >
             Combinations
           </Link>
-          <Link to="/history" onClick={handleClick} className={style.nav__text}>
+          <Link to="/M18-Dz/history" onClick={handleClick} className={style.nav__text}>
             History
           </Link>
         </nav>
