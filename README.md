@@ -1,19 +1,43 @@
 # npm create vite@latest
+
 # npm install
+
 # npm run dev
 
 - https://www.npmjs.com/package/react-router
+
 # npm i react-router-dom
 
-
 1. файл router.tsx
-
-
 
 https://maggieshpileva.github.io/BeansProject/
 https://jelly-belly-wiki.netlify.app/
 
 #e83a4b
+
+2. Деплой
+
+ - npm run build
+
+ - npm i gh-pages --save-dev
+
+ - "deploy": "gh-pages -d build",
+   "predeploy": "npm run build"
+
+- создаем с вами в корневой директории еще одну папку под названием “.github”.
+В этой папке создаем еще одну папку под названием Workflows. И в этой папке создаем файл 
+
+- С сайта https://vite.dev/guide/static-deploy.html  берем настройки с раздела GitHub Pages
+
+- на гитхад Settings - pages - ветка main  - созраняем и берем ссылку https://nataly-suv.github.io/M18-Dz/ и вставляем в package.json "homepage": "https://nataly-suv.github.io/M18-Dz", // nataly-suv - ник в гитхаб, M18-Dz - имя репозитория
+
+
+- После этого заходим в vite.config.ts. И добавляем после плагинов base (то есть базовый наш URL).
+base: "M18-Dz" // M18-Dz - имя репозитория
+
+- Если все успешно, то нам еще раз нужно собрать данный проект, но уже с теми путями, которые мы определили. Мы убираем папку dist, удаляем ее и опять пишем команду npm run build. Это у нас pre-deploy
+
+
 
 # React + TypeScript + Vite
 
@@ -35,11 +59,11 @@ export default tseslint.config({
   languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -48,11 +72,11 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from "eslint-plugin-react";
 
 export default tseslint.config({
   // Set the react version
-  settings: { react: { version: '18.3' } },
+  settings: { react: { version: "18.3" } },
   plugins: {
     // Add the react plugin
     react,
@@ -61,7 +85,7 @@ export default tseslint.config({
     // other rules...
     // Enable its recommended rules
     ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
+    ...react.configs["jsx-runtime"].rules,
   },
-})
+});
 ```
